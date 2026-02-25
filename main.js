@@ -4,26 +4,26 @@
 const events = [
     {
         id: 1,
-        title: "Tech Conference 2026",
-        date: "2026-03-15",
-        location: "San Francisco, CA",
-        description: "Join us for an exciting tech conference with industry leaders and innovators.",
+        title: "ACM",
+        date: "date",
+        location: "FEU TECH",
+        description: "N/A",
         emoji: "🖥️"
     },
     {
         id: 2,
-        title: "Community Meetup",
-        date: "2026-03-22",
-        location: "New York, NY",
-        description: "Connect with fellow community members and share your experiences.",
+        title: "IGNITION",
+        date: "DATE",
+        location: "FEU TECH",
+        description: "N/A",
         emoji: "🤝"
     },
     {
         id: 3,
-        title: "Startup Pitch Night",
-        date: "2026-04-05",
-        location: "Los Angeles, CA",
-        description: "Discover innovative startups and network with entrepreneurs.",
+        title: "YES",
+        date: "DATE",
+        location: "FEU TECH",
+        description: "N/A",
         emoji: "🚀"
     },
     {
