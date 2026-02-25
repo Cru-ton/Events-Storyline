@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+package-lock.json
+/.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Build
+/dist
+/build
+
+# Dependency directories
+jspm_packages/
+
+# Misc
+.DS_Store
+.env.test
+coverage/
+
+# IDEs and Editors
+.vscode/ 
+.idea/ 
+*.sublime-workspace
+*.sublime-project
