@@ -3,11 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events Storyline</title>
+    <title>Events Storyline - Organization Events</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to Events Storyline</h1>
+    <!-- Header -->
+    <header>
+        <h1>🎭 Events Storyline</h1>
+        <p>Discover and join our amazing organization events</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Search Bar -->
+        <div class="search-section">
+            <input type="text" id="searchInput" class="search-box" placeholder="Search events...">
+            <button class="btn" onclick="searchEvents(document.getElementById('searchInput').value)">Search</button>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-section">
+            <button class="filter-btn active" data-month="all">All Events</button>
+            <button class="filter-btn" data-month="3">March</button>
+            <button class="filter-btn" data-month="4">April</button>
+            <button class="filter-btn" data-month="5">May</button>
+            <button class="filter-btn" data-month="6">June</button>
+        </div>
+
+        <!-- Events Grid -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+            <div class="events-grid"></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Events Storyline. All rights reserved.</p>
+        <p>Follow us on social media for updates!</p>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
