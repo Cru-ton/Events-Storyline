@@ -45,7 +45,7 @@
             </div>
 
             <div class="events-grid">
-                <article class="event-card">
+                <article class="event-card" data-event-id="1" data-event-title="Annual Tech Conference 2026" data-event-date="February 15, 2026" data-event-type="Conference">
                     <img src="assets/event-1.svg" alt="Event 1" class="event-img">
                     <div class="event-body">
                         <h3>Annual Tech Conference 2026</h3>
@@ -54,7 +54,7 @@
                     </div>
                 </article>
 
-                <article class="event-card">
+                <article class="event-card" data-event-id="2" data-event-title="Sarah & Michael's Wedding" data-event-date="January 20, 2026" data-event-type="Private">
                     <img src="assets/event-2.svg" alt="Event 2" class="event-img">
                     <div class="event-body">
                         <h3>Sarah & Michael's Wedding</h3>
@@ -63,7 +63,7 @@
                     </div>
                 </article>
 
-                <article class="event-card">
+                <article class="event-card" data-event-id="3" data-event-title="Product Launch: NextGen AI" data-event-date="December 10, 2025" data-event-type="Launch">
                     <img src="assets/event-3.svg" alt="Event 3" class="event-img">
                     <div class="event-body">
                         <h3>Product Launch: NextGen AI</h3>
@@ -89,6 +89,31 @@
             <p>Events Storyline curates and documents memorable organization events across years.</p>
         </section>
     </main>
+
+    <!-- Event Detail Modal -->
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <div class="modal-header">
+                <h2 id="modalTitle">Event Title</h2>
+                <p id="modalMeta" class="muted">Date · Type</p>
+            </div>
+            <div class="modal-body">
+                <div class="modal-video">
+                    <iframe id="modalVideoFrame" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="modal-gallery">
+                    <h3>Photo Gallery</h3>
+                    <div class="modal-photos">
+                        <img src="assets/thumb-1.svg" alt="Photo 1">
+                        <img src="assets/thumb-2.svg" alt="Photo 2">
+                        <img src="assets/thumb-3.svg" alt="Photo 3">
+                        <img src="assets/thumb-4.svg" alt="Photo 4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="footer-inner">
