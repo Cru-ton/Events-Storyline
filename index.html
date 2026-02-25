@@ -4,51 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events Storyline - Organization Events</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <h1>🎭 Events Storyline</h1>
-        <p>Discover and join our amazing organization events</p>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="nav-left">
+                <a class="brand" href="#">Events Storyline</a>
+            </div>
+            <div class="nav-right">
+                <a href="#events">Events</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <img src="assets/hero.svg" alt="Hero background" class="hero-bg">
+            <div class="hero-content">
+                <h1>Events Storyline</h1>
+                <p>Explore our journey through memorable moments and milestones.</p>
+                <div class="hero-actions">
+                    <input id="searchInput" class="search-box" placeholder="Search events...">
+                    <button class="btn">Search</button>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#events">Events</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Search Bar -->
-        <div class="search-section">
-            <input type="text" id="searchInput" class="search-box" placeholder="Search events...">
-            <button class="btn" onclick="searchEvents(document.getElementById('searchInput').value)">Search</button>
-        </div>
-
-        <!-- Filter Buttons -->
-        <div class="filter-section">
-            <button class="filter-btn active" data-month="all">All Events</button>
-            <button class="filter-btn" data-month="3">March</button>
-            <button class="filter-btn" data-month="4">April</button>
-            <button class="filter-btn" data-month="5">May</button>
-            <button class="filter-btn" data-month="6">June</button>
-        </div>
-
-        <!-- Events Grid -->
-        <section id="events">
+    <main class="container">
+        <section id="events" class="events-section">
             <h2>Upcoming Events</h2>
-            <div class="events-grid"></div>
-        </section>
-    </div>
+            <div class="filter-section">
+                <button class="filter-btn active">All Events</button>
+                <button class="filter-btn">March</button>
+                <button class="filter-btn">April</button>
+                <button class="filter-btn">May</button>
+            </div>
 
-    <!-- Footer -->
+            <div class="events-grid">
+                <article class="event-card">
+                    <img src="assets/event-1.svg" alt="Event 1" class="event-img">
+                    <div class="event-body">
+                        <h3>Annual Tech Conference 2026</h3>
+                        <p class="muted">February 15, 2026 · Conference</p>
+                        <p>Our flagship event featuring keynotes, workshops, and panels.</p>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <img src="assets/event-2.svg" alt="Event 2" class="event-img">
+                    <div class="event-body">
+                        <h3>Sarah & Michael's Wedding</h3>
+                        <p class="muted">January 20, 2026 · Private</p>
+                        <p>A beautiful celebration of love and memories.</p>
+                    </div>
+                </article>
+
+                <article class="event-card">
+                    <img src="assets/event-3.svg" alt="Event 3" class="event-img">
+                    <div class="event-body">
+                        <h3>Product Launch: NextGen AI</h3>
+                        <p class="muted">December 10, 2025 · Launch</p>
+                        <p>Unveiling our NextGen AI platform with live demos.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="assets/thumb-1.svg" alt="Thumb 1">
+                <img src="assets/thumb-2.svg" alt="Thumb 2">
+                <img src="assets/thumb-3.svg" alt="Thumb 3">
+                <img src="assets/thumb-4.svg" alt="Thumb 4">
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About</h2>
+            <p>Events Storyline curates and documents memorable organization events across years.</p>
+        </section>
+    </main>
+
     <footer>
-        <p>&copy; 2026 Events Storyline. All rights reserved.</p>
-        <p>Follow us on social media for updates!</p>
+        <div class="footer-inner">
+            <div>
+                <p>&copy; 2026 Events Storyline. All rights reserved.</p>
+                <p>Curated by the Events Storyline team.</p>
+            </div>
+            <div>
+                <a href="https://paste-trim-32259402.figma.site/" target="_blank" rel="noopener">Figma design</a>
+            </div>
+        </div>
     </footer>
 
     <script src="main.js"></script>
